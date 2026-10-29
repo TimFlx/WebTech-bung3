@@ -31,6 +31,11 @@ div.inhalt {
     margin-left: 182px;
         }
 
+div.inhalt img {
+    width: 11.65%;      /* halbe Breite des Inhalts */
+
+}
+
 div.fuss {
     clear: left;
     border: 1px solid gray;
