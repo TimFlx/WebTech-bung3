@@ -38,7 +38,7 @@ div.navigation a {
     padding: 8px 10px;
     margin-bottom: 4px;
     color: #2c3e50;
-    text-decoration: none;
+    text-decoration: none; /* Entfernt die Unterstreichung der Links*/
     border-radius: 5px;
 }
 
@@ -56,9 +56,22 @@ div.inhalt {
 }
 
 div.inhalt img {
-    max-width: 100%;
+    max-width: 12.1%;
     height: auto;
     border-radius: 8px;
+}
+
+div.inhalt a {
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    color: #2c3e50;
+    text-decoration: none; /* Entfernt die Unterstreichung der Links*/
+    border-radius: 5px;
+}
+
+div.inhalt a:hover {
+    background-color: #e3edf7;
+    color: #3b6ea5;
 }
 
 div.fuss {
