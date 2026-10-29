@@ -75,7 +75,7 @@ div.inhalt a:hover {
 }
 
 div.fuss {
-    clear: left;
+    clear: left; /* damit es unter Float left von Navigationbox steht */
     text-align: center;
     color: #6b7c8f;
     margin-top: 20px;
