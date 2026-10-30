@@ -14,14 +14,17 @@ body {
 div.kopf {
     background-color: #3b6ea5;
     color: white;
-    padding: 20px;
+    padding: 1px 20px;
     margin-bottom: 20px;
     border-radius: 8px; /* Abgerundete Ecken */
+    font-size: 30px; /* Größere Schriftgröße */
+    text-align: center;
 }
 
 div.navigation {
-    float: left;
-    width: 200px;
+    position: absolute;
+    left: 20px;
+    width: 170px;
     background-color: white;
     border: 1px solid #d3e0ed;
     border-radius: 8px;
@@ -48,7 +51,7 @@ div.navigation a:hover {
 }
 
 div.inhalt {
-    margin-left: 220px;       /* 200px Navigation + 20px Abstand */
+    margin-left: 190px;       /* 200px Navigation + 20px Abstand */
     background-color: white;
     border: 1px solid #d3e0ed;
     border-radius: 8px;
@@ -57,6 +60,16 @@ div.inhalt {
 
 div.inhalt img {
     max-width: 12.1%;
+    height: auto;
+    border-radius: 8px;
+}
+
+div.inhaltOikawa{
+    text-align: center;
+}
+
+div.inhaltOikawa img {
+    max-width: 30%;
     height: auto;
     border-radius: 8px;
 }
