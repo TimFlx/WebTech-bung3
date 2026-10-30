@@ -58,10 +58,33 @@ div.inhalt {
     padding: 20px;
 }
 
-div.inhalt img {
-    max-width: 12.1%;
-    height: auto;
-    border-radius: 8px;
+
+
+div.kacheln {
+    --kachel-breite: 300px;   /* !!! Variable: Ändert größe der Kacheln !!! */
+
+    display: flex;            /* Kacheln stehen nebeneinander */
+    flex-wrap: wrap;          /* wenn kein Platz mehr ist, geht es in der nächsten Zeile weiter */
+    gap: 20px;                /* Abstand zwischen den Kacheln */
+}
+
+div.kachel {
+    width: var(--kachel-breite);  /* Breite kommt aus der Variable oben */
+    text-align: center;           /* Text/Link unter dem Bild mittig */
+}
+
+div.kachel img {
+    width: 100%;              /* Bild füllt die ganze Kachelbreite */
+    aspect-ratio: 4 / 3;      /*4 zu 3 Verhältnis bei jeder Kachel*/
+    object-fit: cover;        /* Bild füllt den Rahmen, Überstand wird abgeschnitten, nichts verzerrt */
+    border-radius: 8px;       /* abgerundete Ecken */
+    display: block;           /* entfernt den kleinen Spalt unter dem Bild */
+    max-width: none;          /* hebt das max-width von div.inhalt img auf */
+}
+
+div.kachel a {
+    display: inline-block;  /* Link passt sich an Bildgröße und Schriftlänge an */
+    margin-top: 6px;          /* 6px Abstand über dem Link */
 }
 
 div.inhaltOikawa{
